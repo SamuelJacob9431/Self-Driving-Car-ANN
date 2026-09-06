@@ -7,6 +7,10 @@ WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Self Driving Car")
 
+#Car Values
+CAR_WIDTH = 40
+CAR_HEIGHT = 20
+
 #Car Positioning, tis Start Position
 car_x = 100
 car_y = 300
@@ -31,7 +35,7 @@ while running:
     pygame.draw.rect(
         screen,
         (200, 200, 200),
-        (car_x, car_y, 40, 20)
+        (car_x, car_y, CAR_HEIGHT, CAR_WIDTH)
     )
 
     pygame.display.flip()
