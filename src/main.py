@@ -26,6 +26,13 @@ while running:
     #Update Car position upon Speed
     car_x += speed
     screen.fill((30,30,30)) #BG GREY (RGB Basis) 
+    
+    #Render Car temp as rect
+    pygame.draw.rect(
+        screen,
+        (200, 200, 200),
+        (car_x, car_y, 40, 20)
+    )
 
     pygame.display.flip()
     #60 FPS
