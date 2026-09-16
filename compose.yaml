@@ -1,0 +1,4 @@
+services:
+  car-simulation:
+    build: .
+    container_name: self-driving-car
